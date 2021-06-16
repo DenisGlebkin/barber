@@ -1,0 +1,25 @@
+.start-section {
+	// background: url(../images/start-section/start-section_bg.png) no-repeat right bottom;
+	background-image: url(../images/start-section/start-section_bg.png);
+	background-repeat: no-repeat;
+	background-position: -50px center;
+	background-size: cover;
+	padding: 150px 0;
+	display: flex;
+	align-items: center;
+	
+	@media (min-width: 992px){
+		background-position: right bottom;
+		background-size: auto;
+	}
+	@media (min-width: 768px){
+		min-height: 870px;
+	}
+// .start-section__info
+
+	&__info {
+	}
+
+}
+
+

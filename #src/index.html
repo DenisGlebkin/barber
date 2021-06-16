@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Document description">
+		<title>Barber</title>
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@400;500;700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+		<link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="popup-bg"></div>
+			<div class="container header__body">
+				<div class="header__logo logo"><img src="images/logo.png" alt="logo" class="logo__img"></div>
+				<div class="header__menu">
+					<div class="header__menu-btns"></div>
+					<nav class="menu">
+						<ul class="menu__list">
+							<li class="menu__item"><a href="#" class="menu__item-link">Home</a></li>
+							<li class="menu__item"><a href="#" class="menu__item-link">History</a></li>
+							<li class="menu__item"><a href="#" class="menu__item-link">Service</a></li>
+							<li class="menu__item"><a href="#" class="menu__item-link">Gallery</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="header__control-btns control-btns">
+					<a href="#" class="control-btns__account account-btn" aria-label="account" data-da=".header__menu-btns,431,first">@@include("images/icons/account-icon.svg")</a>
+					<a href="#" class="control-btns__notifications notifications-btn" aria-label="notification" data-da=".header__menu-btns,431,first">
+						@@include("images/icons/notifications-icon.svg")
+						<span class="notifications-btn__indicator">2</span>
+					</a>
+					<a href="#" class="control-btns__appointment primary-btn" data-da=".header__menu,991, last">Appointment</a>
+				</div>
+				@@include("_burger.html")
+			</div>
+		</header>
+		<main class="main">
+			<section class="section start-section">
+				<div class="start-section__info info-block">
+					<div class="info-block__content">
+						<h1 class="info-block__title title"><span class="accent">Hairstyle</span> Reflects The Personality Inside You</h1>
+						<p class="info-block__description description">
+							It is a long established fact that a reader will be distracted by the readable content of a page when looking
+							at.
+						</p>
+						<a href="#" class="info-block__btn primary-btn">Get Started</a>
+					</div>
+				</div>
+			</section>
+			<section class="section history-section">
+					<div class="history-section__info info-block info-block--right">
+						<div class="info-block__content">
+							<h2 class="info-block__heading heading">Our <span class="accent">History</span></h2>
+							<p class="info-block__description description">
+								It is a long established fact that a reader will be distracted by the readable content of a page when looking
+								at.
+							</p>
+							<p class="info-block__description description">
+								It is a long established fact that a reader will be distracted by the readable content of a page when looking
+								at.
+							</p>
+							<a href="#" class="info-block__btn primary-btn">Learn more</a>
+						</div>
+					</div>
+			</section>
+			<section class="section services">
+				<div class="container">
+					<div class="services__body">
+						<h2 class="services__heading heading">Services We <span class="accent">Provide</span></h2>
+						<ul class="services__list">
+							<li class="services__list-item">
+								<div class="services__list-item-icon-wrapper">
+									<img src="images/icons/scissors.png" alt="scissors icon" class="services__list-item-icon">
+								</div>
+								<h3 class="services__list-item-heading">Hair Cut</h3>
+								<p class="services__list-item-description description description--center">long established fact that a reacted by the readable content of hen looking at.</p>
+							</li>
+							<li class="services__list-item">
+								<div class="services__list-item-icon-wrapper">
+									<img src="images/icons/electric-razor.png" alt="electric razor icon" class="services__list-item-icon">
+								</div>
+								<h3 class="services__list-item-heading">Beard Cut</h3>
+								<p class="services__list-item-description description description--center">long established fact that a reacted by the readable content of hen looking at.</p>
+							</li>
+							<li class="services__list-item">
+								<div class="services__list-item-icon-wrapper">
+									<img src="images/icons/cleanser.png" alt="cleanser icon" class="services__list-item-icon">
+								</div>
+								<h3 class="services__list-item-heading">Facial Pack</h3>
+								<p class="services__list-item-description description description--center">long established fact that a reacted by the readable content of hen looking at.</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<section class="section gallery-section">
+				<div class="container">
+					<h2 class="gallery-section__heading heading">Our <span class="accent">Gallery</span></h2>
+					<ul class="gallery-section__gallery gallery">
+						<li class="gallery__item">
+							<a href="images/gallery/gallery-item_1.jpg" class="gallery__item-link" data-fancybox="gallery"><img src="images/gallery/gallery-item_1.jpg" alt="gallery image" class="gallery__item-img"></a>
+						</li>
+						<li class="gallery__item">
+							<a href="images/gallery/gallery-item_2.jpg" class="gallery__item-link" data-fancybox="gallery"><img src="images/gallery/gallery-item_2.jpg" alt="gallery image" class="gallery__item-img"></a>
+						</li>
+						<li class="gallery__item">
+							<a href="images/gallery/gallery-item_3.jpg" class="gallery__item-link" data-fancybox="gallery"><img src="images/gallery/gallery-item_3.jpg" alt="gallery image" class="gallery__item-img"></a>
+						</li>
+						<li class="gallery__item">
+							<a href="images/gallery/gallery-item_4.jpg" class="gallery__item-link" data-fancybox="gallery"><img src="images/gallery/gallery-item_4.jpg" alt="gallery image" class="gallery__item-img"></a>
+						</li>
+						<li class="gallery__item">
+							<a href="images/gallery/gallery-item_5.jpg" class="gallery__item-link" data-fancybox="gallery"><img src="images/gallery/gallery-item_5.jpg" alt="gallery image" class="gallery__item-img"></a>
+						</li>
+						<li class="gallery__item">
+							<a href="images/gallery/gallery-item_6.jpg" class="gallery__item-link" data-fancybox="gallery"><img src="images/gallery/gallery-item_6.jpg" alt="gallery image" class="gallery__item-img"></a>
+						</li>
+					</ul>
+					<a href="#" class="gallery-section__btn primary-btn">View All</a>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="container footer__body">
+				<a href="#" class="footer__logo logo"><img src="images/logo.png" alt="logo" class="logo__img"></a>
+				<p class="footer__description description description--center">
+					It is a long established fact that a reader will be distracted by the readable
+				</p>
+				<nav class="footer__social-menu social-menu">
+					<ul class="social-menu__list">
+						<li class="social-menu__item"><a href="#" class="social-menu__item-link" aria-label="facebook link">@@include("images/icons/facebook.svg")</a></li>
+						<li class="social-menu__item"><a href="#" class="social-menu__item-link" aria-label="twitter link">@@include("images/icons/twitter.svg")</a></li>
+						<li class="social-menu__item"><a href="#" class="social-menu__item-link" aria-label="google-plus link">@@include("images/icons/google-plus.svg")</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</footer>
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+	<script src="libs/dynamicAdapt.js"></script>
+	<script src="js/script.min.js"></script>
+</body>
+
+</html>

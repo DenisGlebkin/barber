@@ -1,0 +1,255 @@
+.header {
+	position: relative;
+	// .header__body
+
+	&__body {
+		position: relative;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		@media (min-width: 992px){
+			justify-content: flex-start;
+			align-items: stretch;
+		}
+	}
+
+	// .header__logo
+
+	&__logo {
+		flex: 1 1 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		// transform: translateX(50%);
+		@media (min-width: 992px){
+			padding: 9px 0 10px;
+			flex: 0 1 auto;
+		}
+	}
+
+	// .header__menu
+
+	&__menu {
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		z-index: 50;
+		padding: 70px 0 30px;
+		background-color: $primary-color-400;
+		transition: transform .7s;
+		text-align: center;
+		overflow-y: auto;
+		transform: translateX(-100%);
+
+		@media (min-width: 1200px){
+			margin: 0 0 0 110px;
+		}
+
+		@media (min-width: 992px){
+			height: auto;
+			padding: 0 0 14px;
+			flex: 1 0 auto;
+			margin: 0 25px;
+			width: auto;
+			position: static;
+			background-color: transparent;
+			transform: translateX(0);
+			text-align: left;
+		}
+
+		@media (min-width: 768px){
+			width: 60%;
+		}
+
+		@media (min-width: 576px){
+			width: 80%;
+			padding-top: 120px;
+		}
+
+		&--active{
+			// transform: translateX(0);
+		}
+	}
+
+	// .header__menu-btns
+
+	&__menu-btns {
+		display: flex;
+		justify-content: center;
+		margin-bottom: 30px;
+
+		@media (min-width: 432px){
+			margin-bottom: 0;
+		}
+	}
+
+	// .header__control-btns
+
+	&__control-btns {
+		flex: 1 1 0;
+		order: 2;
+		@media (min-width: 992px){
+			align-self: flex-end;
+			order: 0;
+			flex: 0 1 auto;
+		}
+	}
+
+	// .header__burger-menu
+
+	&__burger-menu {
+		flex: 1 1 0;
+		align-self: center;
+		order: -1;
+		display: block;
+
+		@media (min-width: 992px){
+			display: none;
+		}
+	}
+}
+
+.logo {
+
+	// .logo__img
+
+	&__img {}
+}
+
+.menu {
+	flex: 0 0 100%;
+	@media (min-width: 992px){
+		height: 100%;
+		flex: 0 1 auto;
+	}
+
+	// .menu__list
+
+	&__list {
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 0 20px;
+
+		@media (min-width: 992px){
+			flex-direction: row;
+			align-items: stretch;
+		}
+	}
+
+	// .menu__item
+
+	&__item {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		line-height: 1.33;
+		font-weight: 500;
+
+		@media (min-width: 992px){
+			width: auto;
+			display: block;
+		}
+	}
+
+	// .menu__item-link
+
+	&__item-link {
+		display: inline-flex;
+		// width: 100%;
+		height: 100%;
+		padding: 16px;
+		border-radius: 0 0 5px 5px;
+		text-decoration: none;
+		color: $primary-color-50;
+		transition: all .2s;
+		
+		@media (min-width: 992px){
+			color: $primary-color-400;
+			align-items: flex-end;
+			&:hover{
+				background-color: $primary-color-200;
+				color: $primary-color-50;
+			}
+			
+		}
+	}
+}
+
+.control-btns {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	@media (min-width: 1200px){
+		max-width: 415px;
+		width: 100%;
+	}
+
+	@media (min-width: 992px){
+		justify-content: space-between;
+	}
+	// .control-btns__account
+
+	&__account {
+		order: -1;
+		margin-right: 30px;
+		@media (min-width: 992px){
+			margin-right: 50px;
+		}
+	}
+
+	// .control-btns__notifications
+
+	&__notifications {
+		@media (min-width: 992px) {
+			margin-right: 50px;
+		}
+	}
+
+	// .control-btns__appointment
+
+	&__appointment {
+		margin-top: 30px;
+
+		@media (min-width: 992px){
+			margin-top: 0;
+		}
+	}
+}
+
+.account-btn,
+.notifications-btn {
+	display: inline-block;
+	width: 42px;
+	height: 42px;
+}
+
+.account-btn{
+
+}
+
+.notifications-btn {
+	position: relative;
+	// .notifications-btn__indicator
+
+	&__indicator {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 17px;
+		height: 17px;
+		position: absolute;
+		color: $primary-color-50;
+		border: 1px solid;
+		background-color: $secondary-color-100;
+		font-size: 10px;
+		font-weight: 700;
+		border-radius: 50%;
+		top: 0;
+		right: 0;
+	}
+}

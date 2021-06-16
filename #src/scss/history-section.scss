@@ -1,0 +1,56 @@
+.history-section {
+	background-image: url(../images/history-section/history-section_bg.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	padding: 150px 0;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	
+	position: relative;
+
+	@media (min-width: 1200px){
+		background-position: 85px bottom;
+	}
+	@media (min-width: 768px){
+		min-height: 1195px;
+		background-size: auto;
+	}
+
+	&::before,
+	&::after {
+		@media (min-width: 576px){
+				content: "";
+				display: block;
+				width: 283px;
+				height: 550px;
+				background: url(../images/blue-wave.png) no-repeat 0 0;
+				position: absolute;
+				top: 0;
+				left: 0;
+				transform: translateX(-50%);
+		}
+
+		@media (min-width: 992px){
+			transform: translateX(0);
+		}
+	}
+
+	&::after {
+		@media (min-width: 576px){
+			left: auto;
+			right: 0;
+			transform: rotateY(180deg) translateX(-50%);
+		}
+		
+		@media (min-width: 992px){
+			transform: rotateY(180deg) translateX(0);
+		}
+	}
+
+	// .history-section__info
+
+	&__info {
+	}
+}
